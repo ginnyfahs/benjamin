@@ -1,0 +1,46 @@
+
+
+$font-sans:           'Source Sans Pro', $helvetica !default;
+$font-serif:          'Merriweather', $georgia !default;
+
+$font-normal:         400 !default;
+$font-bold:           700 !default;
+// Mobile First Breakpoints
+$small-screen:  481px !default;
+$medium-screen: 600px !default;
+$large-screen:  1201px !default;
+
+// Grid column counts by screen size
+$grid-columns-small: 1 !default;
+$grid-columns-medium: 6 !default;
+$grid-columns-large: 12 !default;
+
+// @media single-keyword helpers
+$small: new-breakpoint(min-width $small-screen $grid-columns-small) !default;
+$medium: new-breakpoint(min-width $medium-screen $grid-columns-medium) !default;
+$large: new-breakpoint(min-width $large-screen $grid-columns-large) !default;
+
+// Relative font and image file paths
+$font-path:   '../fonts' !default;
+$image-path:  '../img' !default;
+
+// Set $asset-pipeline to true if you're using the Rails Asset Pipeline
+$asset-pipeline:      false !default;
+
+// Magic Numbers
+$text-max-width:      53rem !default;
+$lead-max-width:      77rem !default;
+$site-max-width:      1040px !default;
+$site-margins:        3rem !default;
+$site-margins-mobile: 1.5rem !default;
+$article-max-width:   600px !default;
+$input-max-width:     46rem !default;
+$border-radius:       rem(3px) !default;
+$box-shadow:          0 0 2px $color-shadow !default;
+$focus-shadow:        0 0 3px $color-focus, 0 0 7px $color-focus !default;
+$nav-width:           951px !default;
+
+// 44 x 44 pixels hit target following Apple iOS Human Interface
+// Guidelines
+$hit-area: 4.4rem !default;
+

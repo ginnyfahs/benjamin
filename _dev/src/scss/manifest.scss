@@ -1,8 +1,7 @@
-@import '_utilities/visibility';
-@import '_utilities/width-visibility';
-@import '_utilities/clearfix';
-
-@import '_mixins/sidebar';
+@import '_custom/utilities/visibility';
+@import '_custom/utilities/width-visibility';
+@import '_custom/utilities/clearfix';
+@import '_custom/mixins/sidebar';
 
 // Elements -------------- //
 // Styles basic HTML elements
@@ -33,62 +32,62 @@
 @import 'components/skipnav';
 
 // Custom CSS ------------//
-@import '_modules/main';
-@import '_modules/typography';
+@import '_custom/components/main';
+@import '_custom/components/typography';
 
 // hero
-@import '_modules/hero';
-@import '_modules/featured-post';
-@import '_modules/video-bg';
+@import '_custom/components/hero';
+@import '_custom/components/featured-post';
+@import '_custom/components/video-bg';
 
 // top navbar
-@import '_modules/navbar';
-@import '_modules/navbar-secondary';
-@import '_modules/navbar--dark';
-@import '_modules/brand';
+@import '_custom/components/navbar';
+@import '_custom/components/navbar-secondary';
+@import '_custom/components/navbar--dark';
+@import '_custom/components/brand';
 
 
 
-@import '_modules/sortables';
-@import '_modules/sidenav';
+@import '_custom/components/sortables';
+@import '_custom/components/sidenav';
 
 // entry content
-@import '_modules/entry';
-@import '_modules/wp-styles';
-@import '_modules/blockquote';
-@import '_modules/table';
-@import '_modules/images';
+@import '_custom/components/entry';
+@import '_custom/components/wp-styles';
+@import '_custom/components/blockquote';
+@import '_custom/components/table';
+@import '_custom/components/images';
 
 // navigations
-@import '_modules/navlist';
-@import '_modules/nav-links';
-@import '_modules/footer-nav';
-@import '_modules/post-navigation';
-@import '_modules/page-links';
+@import '_custom/components/navlist';
+@import '_custom/components/nav-links';
+@import '_custom/components/footer-nav';
+@import '_custom/components/post-navigation';
+@import '_custom/components/page-links';
 
 
 
 // misc
-@import '_modules/audio';
-@import '_modules/wp-editor';
-@import '_modules/widgets';
-@import '_modules/checkboxes';
-@import '_modules/comments';
-@import '_modules/contact-block';
-@import '_modules/media-block';
-@import '_modules/sidebar';
-@import '_modules/sections';
-@import '_modules/form';
-@import '_modules/alerts';
-@import '_modules/gallery';
+@import '_custom/components/audio';
+@import '_custom/components/wp-editor';
+@import '_custom/components/widgets';
+@import '_custom/components/checkboxes';
+@import '_custom/components/comments';
+@import '_custom/components/contact-block';
+@import '_custom/components/media-block';
+@import '_custom/components/sidebar';
+@import '_custom/components/sections';
+@import '_custom/components/form';
+@import '_custom/components/alerts';
+@import '_custom/components/gallery';
 
 // custom grid for content area
-@import '_utilities/content-span-columns';
+@import '_custom/utilities/content-span-columns';
 
-@import '_utilities/content-media';
-@import '_modules/grid-bugfixes';
-@import '_modules/grid';
+@import '_custom/utilities/content-media';
+@import '_custom/components/grid-bugfixes';
+@import '_custom/components/grid';
 
 
 // print
-@import '_utilities/print';
+@import '_custom/utilities/print';
