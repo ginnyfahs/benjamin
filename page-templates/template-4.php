@@ -64,10 +64,9 @@ if (!$hide_content) :
             <hr>
 
             <div>
-                <h3>Are you self-reporting, or reporting on behalf of someone else?</h3>
+                <h3>Are you reporting an online incident, crime, scam, or a victimization of behalf of another person such as a
+                    parent, relative, or grandparent?<span class="required">*</span></h3>
                 <div>
-                    <p>Are you reporting an online incident, crime, scam, or a victimization of behalf of another person such as a
-                        parent, relative, or grandparent?<span class="required">*</span></p>
                     <input id="behalf-of-others-yes" type="radio" name="behalf-of-others" value="true" required>
                     <label for="behalf-of-others-yes">Yes</label>
                     <input id="behalf-of-others-no" type="radio" name="behalf-of-others" value="false" required>
@@ -109,7 +108,7 @@ if (!$hide_content) :
                     <p>Did the incident occur multiple times? If yes, please list additional dates and times.</p>
                     <input type="radio" id="occurred-multiple-yes" name="occurred-multiple" value="true">
                     <label for="occurred-multiple-yes">Yes </label>
-                    <input type="radio" id="ocurred-multiple-no" name="occurred-multiple" value="false" checked>
+                    <input type="radio" id="occurred-multiple-no" name="occurred-multiple" value="false">
                     <label for="occurred-multiple-no">No </label>
 
                     <div id="more-dates"></div>
@@ -173,7 +172,7 @@ if (!$hide_content) :
                 <p>Are there witnesses or victims to this incident?</p>
                 <input type="radio" name="witnesses" id="witnesses-yes" value="true">
                 <label for="witnesses-yes">Yes</label>
-                <input type="radio" name="witnesses" id="witnesses-no" value="false" checked>
+                <input type="radio" name="witnesses" id="witnesses-no" value="false">
                 <label for="witnesses-no">No</label>
 
                 <div id="witnesses-names" style="display:none;">
@@ -202,13 +201,13 @@ if (!$hide_content) :
                     <p>How did the incident occur?<span class="required">*</span></p>
                     <select id="fraud-vector" required>
                         <option value="">--Please choose an option--</option>
-                        <option value="home-phone">Home phone</option>
-                        <option value="mobile-phone">Mobile phone</option>
-                        <option value="email">Email</option>
-                        <option value="social-network">Social network</option>
-                        <option value="messaging-app">Messaging app</option>
-                        <option value="online-dating">Online dating service</option>
                         <option value="cash-app">Cash app</option>
+                        <option value="online-dating">Dating service</option>
+                        <option value="email">Email</option>
+                        <option value="home-phone">Home phone</option>
+                        <option value="messaging-app">Messaging app</option>
+                        <option value="mobile-phone">Mobile phone</option>
+                        <option value="social-network">Social network</option>
                         <option value="voice-assisstant">Voice assistant</option>
                         <option value="other">Other</option>
                     </select>
@@ -236,7 +235,7 @@ if (!$hide_content) :
                             <label>Your email:
                                 <input type="email" />
                             </label>
-                            <label>Your email:
+                            <label>Their email:
                                 <input type="email">
                             </label>
                         </div>
@@ -244,11 +243,11 @@ if (!$hide_content) :
                             <label>Please select the social network:
                                 <select>
                                     <option value="">--Please choose an option--</option>
+                                    <option>Ello</option>
                                     <option>Facebook</option>
-                                    <option>Twitter</option>
                                     <option>Instagram</option>
                                     <option>Pinterest</option>
-                                    <option>Ello</option>
+                                    <option>Twitter</option>
                                     <option value="other">Other</option>
                                 </select>
                             </label>
@@ -264,15 +263,15 @@ if (!$hide_content) :
                             <label>Please select the messaging app:
                                 <select>
                                     <option value="">--Please choose an option--</option>
-                                    <option>WhatsApp</option>
-                                    <option>Telegram</option>
-                                    <option>Signal</option>
-                                    <option>WeChat</option>
-                                    <option>iMessage</option>
-                                    <option>SnapChat</option>
-                                    <option>Skype</option>
                                     <option>Facetime</option>
+                                    <option>iMessage</option>
                                     <option>Hangouts</option>
+                                    <option>Signal</option>
+                                    <option>Skype</option>
+                                    <option>SnapChat</option>
+                                    <option>Telegram</option>
+                                    <option>WeChat</option>
+                                    <option>WhatsApp</option>
                                     <option>Other</option>
                                 </select>
                             </label>
@@ -288,11 +287,15 @@ if (!$hide_content) :
                             <label>Please select the dating app:
                                 <select>
                                     <option value="">--Please choose an option--</option>
-                                    <option>Tinder</option>
-                                    <option>Match</option>
-                                    <option>OKCupid</option>
                                     <option>Bumble</option>
+                                    <option>eHarmony</option>
+                                    <option>Match</option>
                                     <option>MeetMe</option>
+                                    <option>OKCupid</option>
+                                    <option>OurTime</option>
+                                    <option>Plenty of Fish</option>
+                                    <option>Senior People Meet</option>
+                                    <option>Tinder</option>
                                     <option>Other</option>
                                 </select>
                             </label>
@@ -310,10 +313,10 @@ if (!$hide_content) :
                                 <select>
                                     <option value="">--Please choose an option--</option>
                                     <option>Alexa</option>
+                                    <option>Bixby</option>
+                                    <option>Cortana</option>
                                     <option>Google</option>
                                     <option>Siri</option>
-                                    <option>Cortana</option>
-                                    <option>Bixby</option>
                                     <option>Other</option>
                                 </select>
                             </label>
@@ -349,7 +352,7 @@ if (!$hide_content) :
                 </p>
                 <input type="radio" name="funds-transferred" id="funds-transferred-yes" value="true" required>
                 <label for="funds-transferred-yes">Yes</label>
-                <input type="radio" name="funds-transferred" id="funds-transferred-false" value="false" required checked>
+                <input type="radio" name="funds-transferred" id="funds-transferred-false" value="false" required>
                 <label for="funds-transferred-no">No</label>
 
 
@@ -380,12 +383,12 @@ if (!$hide_content) :
                     <div id="cash-payment-service-info" style="display:none;">
                         <select>
                             <option value="">--Please choose an option--</option>
-                            <option>Venmo</option>
-                            <option>CashApp</option>
                             <option>ApplePay</option>
+                            <option>CashApp</option>
                             <option>GooglePay</option>
+                            <option>PayPal</option>
                             <option>Square</option>
-                            <option>Paypal</option>
+                            <option>Venmo</option>
                             <option>Other</option>
                         </select>
 
@@ -586,11 +589,13 @@ if (!$hide_content) :
                     <div>
                         <label>Relation to victim:
                             <select>
-                                <option>Son</option>
+                                <option value="">--Please choose an option--</option>
+                                <option>Child</option>
+                                <option>Caretaker</option>
                                 <option>Daughter</option>
-                                <option>Grandson</option>
-                                <option>Granddaughter</option>
+                                <option>Grandchild</option>
                                 <option>Sibling</option>
+                                <option>Spouse</option>
                                 <option>Other relative</option>
                                 <option>Other</option>
                             </select>
@@ -639,8 +644,15 @@ if (!$hide_content) :
 
                 <div>
                     <h3>Reports to other agencies or law enforcmeent </h3>
-                    <p>If you have reported this incident to other law enforcement or government agencies, please provide the name,
-                        phone number, email, date reported, report number, etc.</p>
+                    <p>If you have reported this incident to other law enforcement or government agencies, please provide:
+                        <ol>
+                            <li>name of agency or agencies</li>
+                            <li>phone number</li>
+                            <li>email</li>
+                            <li>date reported</li>
+                            <li>report ID</li>
+                            <li>any other information that might help us cross-reference your case</li>
+                    </p>
                     <textarea></textarea>
                     <div>
                         <input id="is-update" type="checkbox">
