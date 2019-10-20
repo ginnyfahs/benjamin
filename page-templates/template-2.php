@@ -46,7 +46,7 @@ if ( ! $hide_content ) :
 				<input type="file">
 			</label>
 
-			<input type="submit" placeholder="Submit updates">
+			<input type="submit" value="Submit updates">
 		</form>
 
 	</div>
