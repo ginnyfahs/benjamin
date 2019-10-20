@@ -46,7 +46,14 @@ if (!$hide_content) :
                 color: red;
                 white-space: pre;
             }
+
+            body {
+                font-size: 24px;
+            }
         </style>
+        <p>
+            Welcome to the FBI's Internet Crime Complaint Center. We're sorry to hear that someone betrayed your trust for their personal gain. By filling out this form, you're providing us with valuable information that we will use to put an end to these crimes. All information is stored securely.
+        <p>
         <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
 
             <input type="hidden" name="action" value="save_ic3_form">
@@ -93,9 +100,9 @@ if (!$hide_content) :
                         $(document).ready(function() {
                             $('#occurred-multiple-yes').change(function() {
                                 if (this.checked) {
-                                    $('#more-dates').append('<br><input type="text" class="datepicker" required>');
-                                    $('#more-dates').append('<br><input type="text" class="datepicker" required>');
-                                    $('#more-dates').append('<br><input type="text" class="datepicker" required>');
+                                    $('#more-dates').append('<br><input type="text" class="datepicker">');
+                                    $('#more-dates').append('<br><input type="text" class="datepicker">');
+                                    $('#more-dates').append('<br><input type="text" class="datepicker">');
                                 }
                             });
                             $('#occurred-multiple-no').change(function() {
@@ -195,8 +202,11 @@ if (!$hide_content) :
                 <h3>How did the incident occur?</h3>
                 <div>
                     <div>
-                        <p>Please enter (or copy+paste) the initial text that was used to contact you.</p>
+                        <p>Please enter (or copy+paste) the initial text that was used to contact you. To learn how to copy and paste, please <a href="https://seniorplanet.org/how-do-i-copy-and-paste-on-my-computer/">click here</a>.</p>
                         <textarea></textarea>
+
+                        <p>If it's easier, feel free to upload a screenshot of your email instead. You can learn how to do that <a href="https://support.apple.com/en-us/HT200289">here for Apple products</a> or <a href="https://support.google.com/android/answer/9075928?hl=en">here for Android devices</a>.</p>
+                        <input type="file"/>
                     </div>
                     <p>How did the incident occur?<span class="required">*</span></p>
                     <select id="fraud-vector" required>
@@ -524,7 +534,7 @@ if (!$hide_content) :
                         <label>Website
                             <input type="text">
                         </label>
-                        <label>IP Address
+                        <label>IP Address (If you don't know know this, feel free to leave this field blank). To learn how to find the IP address of an email sender, <a href="https://aruljohn.com/info/howtofindipaddress/">click here</a>.
                             <input type="text">
                         </label>
                         <label>Photo of prerpetrator
