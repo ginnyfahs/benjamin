@@ -37,7 +37,9 @@ if (!$hide_content) :
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script>
             $(function() {
-                $(".datepicker").datepicker();
+                $(".datepicker").datepicker({
+                    maxDate: "++0d"
+                });
             });
         </script>
 
@@ -54,6 +56,9 @@ if (!$hide_content) :
         <p>
             Welcome to the FBI's Internet Crime Complaint Center. We're sorry to hear that someone betrayed your trust for their personal gain. By filling out this form, you're providing us with valuable information that we will use to put an end to these crimes. All information is stored securely.
         <p>
+        <p>
+            Please click here you updating a previously submitted complaint.
+        </p>
         <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
 
             <input type="hidden" name="action" value="save_ic3_form">
@@ -71,6 +76,21 @@ if (!$hide_content) :
             <hr>
 
             <div>
+                <script>
+                    $(document).ready(function() {
+                        other-submitter-contact-info
+                        $('#behalf-of-others-yes').change(function() {
+                            if (this.checked) {
+                                $('#other-submitter-contact-info').hide();
+                            }
+                        });
+                        $('#behalf-of-others-no').change(function() {
+                            if (this.checked) {
+                                $('#other-submitter-contact-info').show();
+                            }
+                        });
+                    })
+                </script>                    
                 <h3>Are you reporting an online incident, crime, scam, or a victimization of behalf of another person such as a
                     parent, relative, or grandparent?<span class="required">*</span></h3>
                 <div>
@@ -593,7 +613,7 @@ if (!$hide_content) :
 
 
                 <hr>
-                <div>
+                <div id="other-submitter-contact-info">
 
                     <h3>If you're filling out this form on behalf of someone else, please let us know how to reach you:</h3>
                     <div>
@@ -664,10 +684,6 @@ if (!$hide_content) :
                             <li>any other information that might help us cross-reference your case</li>
                     </p>
                     <textarea></textarea>
-                    <div>
-                        <input id="is-update" type="checkbox">
-                        <label for="is-update">Check here if this is an update to a previously filed complaint</label>
-                    </div>
                 </div>
 
                 <hr>
@@ -678,7 +694,7 @@ if (!$hide_content) :
                     </label>
                 </div>
 
-                <input type="submit">
+                <input type="submit" value="Send Request">
         </form>
 
 
