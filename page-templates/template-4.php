@@ -54,10 +54,15 @@ if (!$hide_content) :
             }
         </style>
         <p>
-            Welcome to the FBI's Internet Crime Complaint Center. We're sorry to hear that someone betrayed your trust for their personal gain. By filling out this form, you're providing us with valuable information that we will use to put an end to these crimes. All information is stored securely.
+            Welcome to the FBI's Internet Crime Complaint Center. We're sorry to hear that someone betrayed your trust for their personal gain. By filling out this form, you're providing us with valuable information that we will use to put an end to these crimes. All information is stored securely. To successfully fill out this form, you will need:
         <p>
+        <ul>
+            <li>Any information you have about the perpetrator</li>
+            <li>Copies of communication between you and the perpetrator</li>
+            <li>Copies of any reports you may have made to other law enforcement agencies</li>
+            <li>A list of people who can corroborate your report, if available</li>
         <p>
-            Please click here you updating a previously submitted complaint.
+            <a href="/update-case">Please click here you updating a previously submitted complaint.</a>
         </p>
         <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
 
@@ -78,7 +83,8 @@ if (!$hide_content) :
             <div>
                 <script>
                     $(document).ready(function() {
-                        other-submitter-contact-info
+                        // Hide by default
+                        $('#other-submitter-contact-info').hide();
                         $('#behalf-of-others-yes').change(function() {
                             if (this.checked) {
                                 $('#other-submitter-contact-info').hide();

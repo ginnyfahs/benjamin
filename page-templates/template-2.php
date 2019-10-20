@@ -31,14 +31,24 @@ if ( ! $hide_content ) :
 	endif;
 	?>
 	<div class="main-content <?php echo esc_attr( $main_width ); ?>">
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
+			<label>What was your previous case ID?
+				<input type="text">
+			</label>
+			
+			<label>
+				Let us know what has changed! Please try to be as descriptive as possible.
+				<textarea><textarea>
+			</label>
 
-			get_template_part( 'template-parts/singles/content', 'page' );
+			<label>
+				Do you have any additional documentation you'd like us to have?
+				<input type="file">
+			</label.
 
-		endwhile; // End of the loop.
-		?>
+			<input type="submit" placeholder="Submit updates">
+		</form>
+
 	</div>
 	<?php
 	if ( $sidebar_position === 'right' ) :
