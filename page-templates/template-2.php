@@ -44,7 +44,7 @@ if ( ! $hide_content ) :
 			<label>
 				Do you have any additional documentation you'd like us to have?
 				<input type="file">
-			</label.
+			</label>
 
 			<input type="submit" placeholder="Submit updates">
 		</form>
