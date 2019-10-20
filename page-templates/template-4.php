@@ -61,6 +61,7 @@ if (!$hide_content) :
             <li>Copies of communication between you and the perpetrator</li>
             <li>Copies of any reports you may have made to other law enforcement agencies</li>
             <li>A list of people who can corroborate your report, if available</li>
+        </ul
         <p>
             <a href="/update-case">Please click here you updating a previously submitted complaint.</a>
         </p>

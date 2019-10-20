@@ -38,7 +38,7 @@ if ( ! $hide_content ) :
 			
 			<label>
 				Let us know what has changed! Please try to be as descriptive as possible.
-				<textarea><textarea>
+				<textarea></textarea>
 			</label>
 
 			<label>
