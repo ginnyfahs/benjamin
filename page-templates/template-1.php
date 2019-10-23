@@ -53,7 +53,7 @@ if ( ! $hide_content ) :
 
 		<a href="/update-case">
 			<button>
-				Submit A Report
+				Update A Submitted Complaint
 			</button>
 		</a>
 
