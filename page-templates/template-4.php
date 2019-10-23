@@ -53,18 +53,6 @@ if (!$hide_content) :
                 font-size: 24px;
             }
         </style>
-        <p>
-            Welcome to the FBI's Internet Crime Complaint Center. We're sorry to hear that someone betrayed your trust for their personal gain. By filling out this form, you're providing us with valuable information that we will use to put an end to these crimes. All information is stored securely. To successfully fill out this form, you will need:
-        <p>
-        <ul>
-            <li>Any information you have about the perpetrator</li>
-            <li>Copies of communication between you and the perpetrator</li>
-            <li>Copies of any reports you may have made to other law enforcement agencies</li>
-            <li>A list of people who can corroborate your report, if available</li>
-        </ul
-        <p>
-            <a href="/update-case">Please click here you updating a previously submitted complaint.</a>
-        </p>
         <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
 
             <input type="hidden" name="action" value="save_ic3_form">
@@ -97,7 +85,7 @@ if (!$hide_content) :
                             }
                         });
                     })
-                </script>                    
+                </script>
                 <h3>Are you reporting an online incident, crime, scam, or a victimization of behalf of another person such as a
                     parent, relative, or grandparent?<span class="required">*</span></h3>
                 <div>
@@ -127,14 +115,12 @@ if (!$hide_content) :
                         $(document).ready(function() {
                             $('#occurred-multiple-yes').change(function() {
                                 if (this.checked) {
-                                    $('#more-dates').append('<br><input type="text" class="datepicker">');
-                                    $('#more-dates').append('<br><input type="text" class="datepicker">');
-                                    $('#more-dates').append('<br><input type="text" class="datepicker">');
+                                    $('#more-dates').show()
                                 }
                             });
                             $('#occurred-multiple-no').change(function() {
                                 if (this.checked) {
-                                    $('#more-dates').empty();
+                                    $('#more-dates').hide();
                                 }
                             });
                         })
@@ -145,7 +131,9 @@ if (!$hide_content) :
                     <input type="radio" id="occurred-multiple-no" name="occurred-multiple" value="false">
                     <label for="occurred-multiple-no">No </label>
 
-                    <div id="more-dates"></div>
+                    <div id="more-dates" style="display: hidden;">
+                        <textarea></textarea>
+                    </div>
 
                 </div>
 
@@ -414,7 +402,7 @@ if (!$hide_content) :
                     </script>
                     <input type="radio" name="cash-payment-service" id="cash-payment-service-yes" value="true">
                     <label for="cash-payment-service-yes">Yes</label>
-                    <input type="radio" name="cash-payment-service" id="cash-payment-service-no" value="false" checked>
+                    <input type="radio" name="cash-payment-service" id="cash-payment-service-no" value="false">
                     <label for="cash-payment-service-no">No</label>
 
                     <div id="cash-payment-service-info" style="display:none;">
@@ -486,7 +474,7 @@ if (!$hide_content) :
                     <p>Were the funds transferred via an offline service?</p>
                     <input type="radio" name="offline-payment-service" id="offline-payment-service-yes" value="true">
                     <label for="offline-payment-service-yes">Yes</label>
-                    <input type="radio" name="offline-payment-service" id="offline-payment-service-no" value="false" checked>
+                    <input type="radio" name="offline-payment-service" id="offline-payment-service-no" value="false">
                     <label for="offline-payment-service-no">No</label>
 
                     <div id="offline-payment-service-info" style="display:none;">
@@ -564,7 +552,7 @@ if (!$hide_content) :
                         <label>IP Address (If you don't know know this, feel free to leave this field blank). To learn how to find the IP address of an email sender, <a href="https://aruljohn.com/info/howtofindipaddress/">click here</a>.
                             <input type="text">
                         </label>
-                        <label>Photo of prerpetrator
+                        <label>Photo of perpetrator
                             <input type="file">
                         </label>
                         <label>Anything we missed that might be helpful?
@@ -701,7 +689,7 @@ if (!$hide_content) :
                     </label>
                 </div>
 
-                <input type="submit" value="Send Request">
+                <input type="submit" value="Submit Report">
         </form>
 
 

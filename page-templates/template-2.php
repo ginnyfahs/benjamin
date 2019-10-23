@@ -32,21 +32,23 @@ if ( ! $hide_content ) :
 	?>
 	<div class="main-content <?php echo esc_attr( $main_width ); ?>">
 		<form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
-			<label>What was your previous case ID?
-				<input type="text">
-			</label>
-			
-			<label>
-				Let us know what has changed! Please try to be as descriptive as possible.
-				<textarea></textarea>
+			<label>What was the case ID for your previous case?
+				<input type="text" required>
 			</label>
 
 			<label>
-				Do you have any additional documentation you'd like us to have?
+				Please explain any changes to your case. Try to be as descriptive as possible.
+				<textarea required></textarea>
+			</label>
+
+			<label>
+				If you’d like to provide additional documentation, you may upload it here.
 				<input type="file">
 			</label>
 
-			<input type="submit" value="Submit updates">
+			<a href="/confirmation">
+				<input type="submit" value="Submit updates">
+			</a>
 		</form>
 
 	</div>
