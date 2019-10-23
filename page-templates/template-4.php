@@ -688,7 +688,7 @@ if (!$hide_content) :
                     </label>
                 </div>
 
-                <input type="submit" value="Submit Report" onclick="window.location.href='/confirmation'">
+                <input type="submit" value="Submit Report">
         </form>
 
 

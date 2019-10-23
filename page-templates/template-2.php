@@ -30,14 +30,25 @@ if ( ! $hide_content ) :
 		benjamin_get_sidebar( $template, $sidebar_position, $sidebar_size );
 	endif;
 	?>
+	<style>
+			.required {
+					color: red;
+					white-space: pre;
+			}
+
+			body {
+					font-size: 24px;
+			}
+	</style>
+
 	<div class="main-content <?php echo esc_attr( $main_width ); ?>">
-		<form>
-			<label>What was the case ID for your previous case?
+		<form action="/confirmation" method="post">
+			<label>What was the case ID for your previous case?<span class="required">*</span>
 				<input type="text" required>
 			</label>
 
 			<label>
-				Please explain any changes to your case. Try to be as descriptive as possible.
+				Please explain any changes to your case. Try to be as descriptive as possible.<span class="required">*</span>
 				<textarea required></textarea>
 			</label>
 
@@ -46,11 +57,9 @@ if ( ! $hide_content ) :
 				<input type="file">
 			</label>
 
-			<a href="/confirmation" style="text-decoration: none;">
-				<button>
-					Submit Updates
-				</button>
-			</a>
+			<button>
+				Submit Updates
+			</button>
 		</form>
 
 	</div>
