@@ -53,7 +53,7 @@ if (!$hide_content) :
                 font-size: 24px;
             }
         </style>
-        <form>
+        <form method="POST" action="/confirmation">
             <div>
                 <h3>Business or Personal</h3>
                 <div>
@@ -73,12 +73,12 @@ if (!$hide_content) :
                         $('#other-submitter-contact-info').hide();
                         $('#behalf-of-others-yes').change(function() {
                             if (this.checked) {
-                                $('#other-submitter-contact-info').hide();
+                                $('#other-submitter-contact-info').show();
                             }
                         });
                         $('#behalf-of-others-no').change(function() {
                             if (this.checked) {
-                                $('#other-submitter-contact-info').show();
+                                $('#other-submitter-contact-info').hide();
                             }
                         });
                     })
