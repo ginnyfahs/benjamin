@@ -609,63 +609,65 @@ if (!$hide_content) :
 
                 <hr>
                 <div id="other-submitter-contact-info">
-
-                    <h3>If you're filling out this form on behalf of someone else, please let us know how to reach you:</h3>
                     <div>
-                        <label>Relation to victim:
-                            <select>
-                                <option value="">--Please choose an option--</option>
-                                <option>Child</option>
-                                <option>Caretaker</option>
-                                <option>Daughter</option>
-                                <option>Grandchild</option>
-                                <option>Sibling</option>
-                                <option>Spouse</option>
-                                <option>Other relative</option>
-                                <option>Other</option>
-                            </select>
-                        </label>
-                        <label>First name
-                            <input type="text">
-                        </label>
-                        <label>Middle name
-                            <input type="text">
-                        </label>
-                        <label>Last name
-                            <input type="text">
-                        </label>
-                        <label>Business name
-                            <input type="text">
-                        </label>
-                        <label>Street address
-                            <input type="text">
-                        </label>
-                        <label>Street address 2
-                            <input type="text">
-                        </label>
-                        <label>City
-                            <input type="text">
-                        </label>
-                        <label>State
-                            <input type="text">
-                        </label>
-                        <label>ZIP Code
-                            <input type="text">
-                        </label>
-                        <label>Country
-                            <input type="text">
-                        </label>
-                        <label>Best phone number to reach you:
-                            <input type="tel">
-                        </label>
-                        <label>Best email address to reach you:
-                            <input type="email">
-                        </label>
+
+                        <h3>If you're filling out this form on behalf of someone else, please let us know how to reach you:</h3>
+                        <div>
+                            <label>Relation to victim:
+                                <select>
+                                    <option value="">--Please choose an option--</option>
+                                    <option>Child</option>
+                                    <option>Caretaker</option>
+                                    <option>Daughter</option>
+                                    <option>Grandchild</option>
+                                    <option>Sibling</option>
+                                    <option>Spouse</option>
+                                    <option>Other relative</option>
+                                    <option>Other</option>
+                                </select>
+                            </label>
+                            <label>First name
+                                <input type="text">
+                            </label>
+                            <label>Middle name
+                                <input type="text">
+                            </label>
+                            <label>Last name
+                                <input type="text">
+                            </label>
+                            <label>Business name
+                                <input type="text">
+                            </label>
+                            <label>Street address
+                                <input type="text">
+                            </label>
+                            <label>Street address 2
+                                <input type="text">
+                            </label>
+                            <label>City
+                                <input type="text">
+                            </label>
+                            <label>State
+                                <input type="text">
+                            </label>
+                            <label>ZIP Code
+                                <input type="text">
+                            </label>
+                            <label>Country
+                                <input type="text">
+                            </label>
+                            <label>Best phone number to reach you:
+                                <input type="tel">
+                            </label>
+                            <label>Best email address to reach you:
+                                <input type="email">
+                            </label>
+                        </div>
                     </div>
+                    <hr>
                 </div>
 
 
-                <hr>
 
                 <div>
                     <h3>Reports to other agencies or law enforcmeent </h3>
