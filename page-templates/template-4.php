@@ -688,7 +688,12 @@ if (!$hide_content) :
                     </label>
                 </div>
 
+                <div onclick="window.print()" style="padding-top:20px; padding-bottom: 20px">
+                    <a><i>Click here if you'd like to print a copy of your completed form for your records.</i></a>
+                </div>
+
                 <input type="submit" value="Submit Report">
+
         </form>
 
 
