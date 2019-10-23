@@ -45,17 +45,19 @@ if ( ! $hide_content ) :
 		<p>
 			If you have trouble filling out the online form or would prefer to report via phone, you can <b>call 2-1-1</b> and we will make sure your information reaches the FBI.
 		</p>
-		<button>
-			<a href="/ic3-form" style="text-decoration: none;">
-				Submit A Report
-			</a>
-		</button>
-
-		<button>
-			<a href="/update-case" display="text-decoration: none;">
+		<a href="/ic3-form" style="text-decoration: none;">
+			<button>
+					Submit A Report
+			</button>
+		</a>
+		<a href="/update-case" style="text-decoration: none;">
+			<button>
 				Update A Submitted Complaint
-			</a>
-		</button>
+			</button>
+		</a>
+
+
+
 	</div>
 </section>
 
