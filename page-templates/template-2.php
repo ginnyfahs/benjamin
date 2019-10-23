@@ -47,7 +47,9 @@ if ( ! $hide_content ) :
 			</label>
 
 			<a href="/confirmation">
-				<input type="submit" value="Submit updates">
+				<button>
+					Submit Updates
+				</button>
 			</a>
 		</form>
 
