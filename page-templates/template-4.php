@@ -53,10 +53,7 @@ if (!$hide_content) :
                 font-size: 24px;
             }
         </style>
-        <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
-
-            <input type="hidden" name="action" value="save_ic3_form">
-
+        <form>
             <div>
                 <h3>Business or Personal</h3>
                 <div>
@@ -691,7 +688,7 @@ if (!$hide_content) :
                     </label>
                 </div>
 
-                <input type="submit" value="Submit Report">
+                <input type="submit" value="Submit Report" onclick="window.location.href='/confirmation'">
         </form>
 
 

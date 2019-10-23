@@ -31,7 +31,7 @@ if ( ! $hide_content ) :
 	endif;
 	?>
 	<div class="main-content <?php echo esc_attr( $main_width ); ?>">
-		<form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
+		<form>
 			<label>What was the case ID for your previous case?
 				<input type="text" required>
 			</label>
@@ -46,7 +46,7 @@ if ( ! $hide_content ) :
 				<input type="file">
 			</label>
 
-			<a href="/confirmation">
+			<a href="/confirmation" style="text-decoration: none;">
 				<button>
 					Submit Updates
 				</button>
